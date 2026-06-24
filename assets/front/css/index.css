@@ -102,7 +102,7 @@ body {
 
 .sidebar nav a.active {
     background: var(--azul);
-}
+}   
 
 .logout {
     padding: 20px 15px;

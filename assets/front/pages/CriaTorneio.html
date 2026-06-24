@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastrar Torneio | Joker Tournament</title>
+
+    <link rel="stylesheet" href="../css/CriaTorneio.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+
+            <img
+                src="/joker-tournament/assets/img/logo joker tournament.png"
+                alt="Joker Tournament"
+            >
+
+            <h2>JOKER</h2>
+            <span>Tournament</span>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-trophy"></i>
+                Torneios
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                Jogadores
+            </a>
+
+            <a href="CriaTorneio.html" class="active">
+                <i class="fa-solid fa-square-plus"></i>
+                Cadastrar Torneio
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-user-plus"></i>
+                Cadastrar Jogador
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+            </a>
+
+        </nav>
+
+        <div class="logout">
+
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Sair
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- CONTEÚDO -->
+
+    <main class="content">
+
+        <div class="header">
+
+            <h1>Cadastrar Torneio</h1>
+
+            <p>
+                Crie um novo torneio de baralho
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <form>
+
+                <div class="campo">
+
+                    <label for="nome">
+                        Nome do Torneio
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Ex: Torneio Municipal de Truco"
+                    >
+
+                </div>
+
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="modalidade">
+                            Modalidade
+                        </label>
+
+                        <select id="modalidade">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>
+                                Truco
+                            </option>
+
+                            <option>
+                                Canastra
+                            </option>
+
+                            <option>
+                                66
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="formato">
+                            Formato
+                        </label>
+
+                        <select id="formato">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>
+                                Individual
+                            </option>
+
+                            <option>
+                                Dupla
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="data">
+                        Data do Torneio
+                    </label>
+
+                    <input
+                        type="date"
+                        id="data"
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label>
+                        Quantidade de Participantes
+                    </label>
+
+                    <div class="participantes">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="participantes"
+                                value="4"
+                            >
+                            4 Participantes
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="participantes"
+                                value="8"
+                            >
+                            8 Participantes
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="participantes"
+                                value="16"
+                            >
+                            16 Participantes
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <select id="status">
+
+                        <option>
+                            Inscrições Abertas
+                        </option>
+
+                        <option>
+                            Em Andamento
+                        </option>
+
+                        <option>
+                            Finalizado
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit">
+                    Criar Torneio
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
