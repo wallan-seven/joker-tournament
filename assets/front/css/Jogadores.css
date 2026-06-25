@@ -1,0 +1,236 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --azul-escuro: #041c54;
+    --azul: #0d6efd;
+    --vermelho: #ff2d4f;
+    --cinza-bg: #f4f6fa;
+    --cinza-borda: #e4e7ec;
+    --texto-secundario: #6b7280;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cinza-bg);
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(
+        180deg,
+        #d1d3d6 0%,
+        #000000 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-area {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo-area img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.logo-area h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.logo-area span {
+    color: #dbe4ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.sidebar nav a,
+.logout a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: .3s;
+}
+
+.sidebar nav a:hover {
+    background: rgba(255,255,255,.1);
+}
+
+.sidebar nav a.active {
+    background: var(--azul);
+}
+
+.logout {
+    padding: 20px 15px;
+}
+
+/* ===========================
+   CONTEÚDO
+=========================== */
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.header{
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:38px;
+    color:var(--azul-escuro);
+    margin-bottom:5px;
+}
+
+.header p{
+    color:var(--texto-secundario);
+}
+
+/* ===========================
+   BUSCA
+=========================== */
+
+.search-box{
+    margin-bottom:25px;
+}
+
+.search-box input{
+
+    width:100%;
+    max-width:500px;
+
+    height:48px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    padding:0 15px;
+
+    font-size:15px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.players{
+    display:grid;
+    gap:20px;
+}
+
+.player-card{
+
+    background:white;
+
+    border:1px solid var(--cinza-borda);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.player-card h3{
+
+    color:var(--azul-escuro);
+
+    margin-bottom:15px;
+}
+
+.player-card p{
+
+    margin-bottom:8px;
+}
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.edit{
+
+    border:none;
+
+    background:var(--azul);
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.delete{
+
+    border:none;
+
+    background:var(--vermelho);
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width:900px){
+
+    .sidebar{
+        width:90px;
+    }
+
+    .logo-area h2,
+    .logo-area span{
+        display:none;
+    }
+
+    .content{
+        padding:15px;
+    }
+}
