@@ -1,0 +1,238 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.topbar h1 {
+  font-size: 26px;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.topbar p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.btnNovo {
+  background: linear-gradient(135deg, #041c54, #0d6efd);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+}
+
+.btnNovo:hover { opacity: 0.9; }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.statCard i {
+  font-size: 28px;
+}
+
+.statCard span {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  display: block;
+}
+
+.statCard p {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.filtros {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.filtros h3 {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.botoesFiltro {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btnFiltro {
+  border: 1.5px solid #e4e7ec;
+  background: white;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.btnFiltro:hover {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.btnFiltro.ativo {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.card h2 {
+  font-size: 17px;
+  color: #1f2937;
+}
+
+.info {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.info i {
+  margin-right: 4px;
+}
+
+.detalhes {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 12px;
+}
+
+.detalhes small {
+  display: block;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 2px;
+}
+
+.detalhes strong {
+  font-size: 13px;
+  color: #374151;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.btnVer {
+  flex: 1;
+  background: #0d6efd;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.btnVer:hover { opacity: 0.9; }
+
+.btnEditar {
+  background: #f3f4f6;
+  color: #374151;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.btnEditar:hover { background: #e5e7eb; }
+
+.btnExcluir {
+  background: #fff1f2;
+  color: #be123c;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.btnExcluir:hover { background: #fecdd3; }
+
+.loading, .vazio {
+  text-align: center;
+  padding: 60px;
+  color: #9ca3af;
+}
+
+.vazio i {
+  font-size: 48px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.vazio a {
+  color: #0d6efd;
+  font-size: 14px;
+}

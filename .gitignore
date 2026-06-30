@@ -1,0 +1,5 @@
+node_modules/
+.next/
+*.sqlite
+.env.local
+.DS_Store

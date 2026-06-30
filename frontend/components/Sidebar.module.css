@@ -1,0 +1,103 @@
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d1d3d6 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.logoArea {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+.logoArea h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+}
+
+.logoArea span {
+  color: #dbe4ff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.navLink:hover {
+  background: rgba(255,255,255,0.12);
+  color: white;
+}
+
+.navLink.active {
+  background: rgba(255,255,255,0.18);
+  color: white;
+  font-weight: 600;
+}
+
+.logout {
+  padding: 20px 15px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userBadge {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.75);
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.logoutBtn:hover {
+  background: rgba(255,45,79,0.2);
+  color: #ff2d4f;
+}

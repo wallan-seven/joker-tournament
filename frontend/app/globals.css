@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-escuro: #041c54;
+  --azul: #0d6efd;
+  --azul-claro: #2da7ff;
+  --vermelho: #ff2d4f;
+  --cinza-bg: #f4f6fa;
+  --cinza-card: #ffffff;
+  --cinza-borda: #e4e7ec;
+  --texto: #1f2937;
+  --texto-secundario: #6b7280;
+  --verde: #2ecc71;
+  --laranja: #f39c12;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cinza-bg);
+  color: var(--texto);
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}

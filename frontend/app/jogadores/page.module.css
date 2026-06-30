@@ -1,0 +1,168 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.topbar h1 { font-size: 24px; color: #1f2937; margin-bottom: 4px; }
+.topbar p { color: #6b7280; font-size: 14px; }
+
+.btnNovo {
+  background: linear-gradient(135deg, #041c54, #0d6efd);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+}
+.btnNovo:hover { opacity: 0.9; }
+
+.buscaBox {
+  background: white;
+  border: 1.5px solid #e4e7ec;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.buscaBox i { color: #9ca3af; }
+
+.buscaBox input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1f2937;
+  width: 100%;
+  background: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #041c54, #0d6efd);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info { flex: 1; }
+.info h3 { font-size: 15px; color: #1f2937; margin-bottom: 2px; }
+.apelido { font-size: 13px; color: #6b7280; font-style: italic; }
+.tel { font-size: 12px; color: #9ca3af; margin-top: 3px; }
+.tel i { margin-right: 4px; }
+
+.acoes { display: flex; gap: 6px; flex-shrink: 0; }
+
+.btnEditar {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+}
+.btnEditar:hover { background: #e5e7eb; }
+
+.btnExcluir {
+  background: #fff1f2;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #be123c;
+  transition: background 0.2s;
+}
+.btnExcluir:hover { background: #fecdd3; }
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.editForm input {
+  border: 1.5px solid #e4e7ec;
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.editForm input:focus { border-color: #0d6efd; }
+
+.editAcoes { display: flex; gap: 8px; }
+
+.btnSalvar {
+  flex: 1;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btnSalvar:hover:not(:disabled) { opacity: 0.9; }
+.btnSalvar:disabled { opacity: 0.6; }
+
+.btnCancelar {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #6b7280;
+}
+.btnCancelar:hover { background: #e5e7eb; }
+
+.loading, .vazio {
+  text-align: center;
+  padding: 60px;
+  color: #9ca3af;
+}
+.vazio i { font-size: 48px; margin-bottom: 12px; display: block; }
+.vazio a { color: #0d6efd; font-size: 14px; }
